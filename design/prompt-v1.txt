@@ -1,0 +1,10 @@
+Generated using built-in image_gen.
+
+Use case: ui-mockup
+Asset type: high fidelity Chrome extension popup concept.
+Primary request: Visualise a refined minimal tab manager popup opened from the Chrome toolbar. Open tabs are grouped by browser window, each row shows its site favicon and tab title. Hovering a row reveals a small delete/close X icon at its right edge that closes only that tab.
+Composition: one large clearly readable popup, approximately 400px wide and 560px tall, anchored under the extensions area of a cropped Chrome toolbar. Quiet neutral browser page behind. UI dominates the image, front-on flat screen capture aesthetic, no perspective or device.
+Style: sophisticated practical desktop utility, warm white surface, charcoal typography, subtle gray separators, restrained soft green accent for current window. Compact rows, generous readable spacing, crisp sans serif. No gradients, no decorative art, no promotional headlines.
+UI content: header "Tabs" and secondary "9 tabs · 3 windows"; small search field "Search tabs…". Three sections: "Window 1" with small green "Current" label and count 4, "Window 2" count 3, "Window 3" count 2. Rows in window 1: recognizable Gmail favicon "Inbox — Gmail", GitHub favicon "tab-manager · GitHub", Figma favicon "Extension explorations — Figma", Google Docs favicon "Project notes — Google Docs". Window 2: YouTube favicon "Khruangbin — Live at Sydney Opera House", Wikipedia favicon "Chrome extensions — Wikipedia", Google favicon "Minimal tab manager inspiration". Window 3: BBC favicon "BBC News", Spotify favicon "Discover Weekly — Spotify". Truncate long titles neatly with ellipsis.
+Show the GitHub row hovered with subtle pale gray rounded background, pointer over a small X close icon at far right, tiny tooltip "Close tab". Other rows have no visible close icon. Keep favicons aligned at left and titles easy to scan. Window headers have a small window outline icon and subtle collapse chevron. Tiny subdued footer "Click a tab to switch to it".
+Constraints: feasible Chrome extension popup, not a full dashboard, no sidebar, no large cards, no invented extra features, accurate legible UI text.
