@@ -1,6 +1,20 @@
+![Tabs — Less tab hunting. More doing.](docs/images/hero.png)
+
 # Tabs
 
-A minimal Chrome extension for finding and closing tabs across your open windows.
+**Every window. One clear view.**
+
+Find the tab you need, switch straight to it, and close the ones you’re done with. Tabs brings your open Chrome windows into one simple, searchable popup.
+
+[Install in Chrome](#install) · [See the app](#see-the-app) · [Privacy](#privacy)
+
+## See the app
+
+<p align="center">
+  <img src="docs/images/app-screenshot.jpeg" alt="Tabs popup with search and open tabs grouped into two Chrome windows" width="440">
+</p>
+
+Search across windows. Jump to the right page. Clear the clutter without losing your place.
 
 ## Features
 
