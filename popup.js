@@ -1,4 +1,4 @@
-/* No page scripts, remote libraries, analytics, or background process. */
+/* No page scripts, remote libraries, or analytics. */
 const $ = (selector) => document.querySelector(selector);
 const icons = {
   window: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/>',

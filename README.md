@@ -18,6 +18,7 @@ Search across windows. Jump to the right page. Clear the clutter without losing 
 
 ## Features
 
+- A live toolbar badge shows the total open tabs across your browser windows.
 - Open tabs grouped by browser window, with favicons and titles.
 - Search by title or URL.
 - Click a tab to switch to it and focus its window.
@@ -52,7 +53,7 @@ Search temporarily expands matching window sections. Closing a window's final ta
 
 ## Privacy
 
-The `tabs` permission reads tab titles and URLs. The `favicon` permission displays Chrome's cached favicons. Tab data stays in popup memory; there are no analytics, external services, remote scripts, or background processes.
+The `tabs` permission reads tab titles and URLs. The `favicon` permission displays Chrome's cached favicons. Tab data stays in browser memory; there are no analytics, external services, or remote scripts. An event-driven background service worker updates the toolbar count even when the popup is closed.
 
 See [Chrome's favicon documentation](https://developer.chrome.com/docs/extensions/how-to/ui/favicons).
 
@@ -65,7 +66,7 @@ Open `popup.html` in a browser to explore the UI with sample tabs. Preview close
 Run the popup interaction checks with Node.js:
 
 ```sh
-node --test tests/popup.test.cjs
+node --test tests/*.test.cjs
 ```
 
 These use a mocked DOM and Chrome API; they do not replace testing the unpacked extension in Chrome. Tab moves use [Chrome’s tabs.move API](https://developer.chrome.com/docs/extensions/reference/api/tabs#method-move).

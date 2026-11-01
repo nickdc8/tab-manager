@@ -3,11 +3,25 @@
   "name": "Tabs",
   "version": "1.0.0",
   "description": "A quiet place for all your tabs, organised by window.",
-  "permissions": ["tabs", "favicon"],
+  "permissions": [
+    "tabs",
+    "favicon"
+  ],
   "action": {
     "default_title": "Tabs",
     "default_popup": "popup.html",
-    "default_icon": {"16": "icons/icon-16.png", "32": "icons/icon-32.png"}
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
   },
-  "icons": {"16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png"}
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
 }
