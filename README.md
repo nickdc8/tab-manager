@@ -21,6 +21,8 @@ Search across windows. Jump to the right page. Clear the clutter without losing 
 - Open tabs grouped by browser window, with favicons and titles.
 - Search by title or URL.
 - Click a tab to switch to it and focus its window.
+- Drag a tab onto another window group to move it there, including collapsed windows.
+- Or use a row’s **Move tab** button, then click the destination window heading. Press **Escape** to cancel.
 - Hover or keyboard-focus a row to reveal its close button.
 - Close tabs without losing your scroll position.
 - Collapse window sections and identify the current window.
@@ -44,6 +46,8 @@ No dependencies or build step. Keep the folder in place after loading it. After 
 
 Use **Tab** to move between controls and **Enter** or **Space** to activate a button. In the search field, **Arrow Down** focuses the first matching tab and **Escape** clears the search.
 
+Moved tabs go to the end of the destination window; pinned tabs stay in its pinned section. Moving the final tab out of a window closes that window.
+
 Search temporarily expands matching window sections. Closing a window's final tab also closes that window. Only normal browser windows are listed; incognito access follows Chrome's extension settings.
 
 ## Privacy
@@ -55,3 +59,13 @@ See [Chrome's favicon documentation](https://developer.chrome.com/docs/extension
 ## Local preview
 
 Open `popup.html` in a browser to explore the UI with sample tabs. Preview close buttons only remove sample rows.
+
+## Checks
+
+Run the popup interaction checks with Node.js:
+
+```sh
+node --test tests/popup.test.cjs
+```
+
+These use a mocked DOM and Chrome API; they do not replace testing the unpacked extension in Chrome. Tab moves use [Chrome’s tabs.move API](https://developer.chrome.com/docs/extensions/reference/api/tabs#method-move).
