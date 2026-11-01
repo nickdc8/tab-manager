@@ -43,11 +43,23 @@ Search across windows. Jump to the right page. Clear the clutter without losing 
 
 No dependencies or build step. Keep the folder in place after loading it. After pulling updates, click **Reload** on the extension at `chrome://extensions`.
 
+## Toolbar tab count
+
+Pin **Tabs** to Chrome’s toolbar to see your open-tab total on its icon. The green badge counts tabs across all normal browser windows, matching the popup, and updates automatically even when the popup is closed.
+
+Hover over the icon for the full count. Counts above 9,999 display as **10k+** on the badge; the tooltip keeps the exact number. Incognito tabs are included only when Chrome allows the extension access.
+
+## Move tabs between windows
+
+Drag a tab row onto another window group. The destination highlights in green and accepts the tab even when collapsed or hidden by your current search.
+
+For a click or keyboard alternative, use the row’s **Move tab** button, then activate the destination window heading. Press **Escape** to cancel.
+
+Moved tabs go to the end of the destination window; pinned tabs stay in its pinned section. Moving the final tab out of a window closes that window.
+
 ## Keyboard controls
 
 Use **Tab** to move between controls and **Enter** or **Space** to activate a button. In the search field, **Arrow Down** focuses the first matching tab and **Escape** clears the search.
-
-Moved tabs go to the end of the destination window; pinned tabs stay in its pinned section. Moving the final tab out of a window closes that window.
 
 Search temporarily expands matching window sections. Closing a window's final tab also closes that window. Only normal browser windows are listed; incognito access follows Chrome's extension settings.
 
@@ -63,7 +75,7 @@ Open `popup.html` in a browser to explore the UI with sample tabs. Preview close
 
 ## Checks
 
-Run the popup interaction checks with Node.js:
+Run the popup and toolbar badge interaction checks with Node.js:
 
 ```sh
 node --test tests/*.test.cjs
