@@ -1,0 +1,5 @@
+Built-in image_gen edit of docs/images/hero.png.
+
+Use case: precise-object-edit
+Edit the supplied Tabs marketing hero. Change ONLY typography to clean modern sans-serif throughout, in the style of Inter or Helvetica Neue. Large headline should be bold sans-serif, supporting line regular sans-serif, small footer sans-serif (not monospaced). Absolutely no serif letters anywhere.
+Preserve the exact wording: "Tabs", "Less tab hunting.", "More doing.", "Every window. One clear view.", "A minimal Chrome extension". Preserve all product UI text and UI design. Preserve deep forest-green background, ivory text, subtle texture, outlined window motifs, right-side white app popup, hovered close row and pointer, overall 2:1 composition, margins and hierarchy. Fit the headline cleanly within the left area without overlap with the popup; use appropriate font sizing for the new sans-serif. No additional graphics, copy or features.
